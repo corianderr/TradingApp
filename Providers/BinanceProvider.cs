@@ -18,7 +18,7 @@ namespace TradingApp.Providers
 
         public async Task<decimal> GetPriceAsync(string symbol)
         {
-            var priceData = await binanceClient.SpotApi.ExchangeData.GetPriceAsync("BTCUSDT");
+            var priceData = await binanceClient.SpotApi.ExchangeData.GetPriceAsync(symbol);
             return priceData.Data.Price;
         }
     }
