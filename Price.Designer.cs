@@ -1,6 +1,6 @@
 ﻿namespace TradingApp
 {
-    partial class Form1
+    partial class Price
     {
         /// <summary>
         ///  Required designer variable.
@@ -33,18 +33,20 @@
             this.header = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.kucoinBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.bybitBox = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.bybitBox = new System.Windows.Forms.TextBox();
+            this.kucoinBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // binanceBox
             // 
+            this.binanceBox.Enabled = false;
+            this.binanceBox.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.binanceBox.Location = new System.Drawing.Point(75, 93);
             this.binanceBox.Name = "binanceBox";
             this.binanceBox.ReadOnly = true;
-            this.binanceBox.Size = new System.Drawing.Size(367, 23);
+            this.binanceBox.Size = new System.Drawing.Size(367, 27);
             this.binanceBox.TabIndex = 1;
             // 
             // header
@@ -78,14 +80,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Kucoin";
             // 
-            // kucoinBox
-            // 
-            this.kucoinBox.Location = new System.Drawing.Point(75, 170);
-            this.kucoinBox.Name = "kucoinBox";
-            this.kucoinBox.ReadOnly = true;
-            this.kucoinBox.Size = new System.Drawing.Size(367, 23);
-            this.kucoinBox.TabIndex = 4;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -98,13 +92,25 @@
             // 
             // bybitBox
             // 
+            this.bybitBox.Enabled = false;
+            this.bybitBox.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bybitBox.Location = new System.Drawing.Point(75, 245);
             this.bybitBox.Name = "bybitBox";
             this.bybitBox.ReadOnly = true;
-            this.bybitBox.Size = new System.Drawing.Size(367, 23);
+            this.bybitBox.Size = new System.Drawing.Size(367, 27);
             this.bybitBox.TabIndex = 6;
             // 
-            // Form1
+            // kucoinBox
+            // 
+            this.kucoinBox.Enabled = false;
+            this.kucoinBox.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.kucoinBox.Location = new System.Drawing.Point(75, 170);
+            this.kucoinBox.Name = "kucoinBox";
+            this.kucoinBox.ReadOnly = true;
+            this.kucoinBox.Size = new System.Drawing.Size(367, 27);
+            this.kucoinBox.TabIndex = 4;
+            // 
+            // Price
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,9 +122,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.header);
             this.Controls.Add(this.binanceBox);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "Price";
+            this.Text = "Price";
+            this.Load += new System.EventHandler(this.Price_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,9 +135,9 @@
         private Label header;
         private Label label2;
         private Label label3;
-        private TextBox kucoinBox;
         private Label label4;
-        private TextBox bybitBox;
         private System.Windows.Forms.Timer timer1;
+        private TextBox bybitBox;
+        private TextBox kucoinBox;
     }
 }

@@ -1,9 +1,9 @@
 namespace TradingApp
 {
-    public partial class Form1 : Form
+    public partial class Price : Form
     {
         private int count = 0;
-        public Form1()
+        public Price()
         {
             InitializeComponent();
             timer1.Interval = 5000;
@@ -18,7 +18,7 @@ namespace TradingApp
             bybitBox.Text = "Update" + count;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Price_Load(object sender, EventArgs e)
         {
 
         }
