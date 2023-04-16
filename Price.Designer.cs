@@ -124,7 +124,7 @@
             this.Controls.Add(this.binanceBox);
             this.Name = "Price";
             this.Text = "Price";
-            this.Load += new System.EventHandler(this.Price_Load);
+            this.Load += new System.EventHandler(this.PriceLoad);
             this.ResumeLayout(false);
             this.PerformLayout();
 
