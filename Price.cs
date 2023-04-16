@@ -28,7 +28,7 @@ namespace TradingApp
             bybitBox.Text = $"{await bybitProvider.GetPriceAsync("BTCUSDT"):n}";
         }
 
-        private async void Price_Load(object sender, EventArgs e)
+        private async void PriceLoad(object sender, EventArgs e)
         {
             await UpdatePrices();
             timer1.Interval = 5000;
