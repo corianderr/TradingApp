@@ -1,10 +1,4 @@
-﻿using Binance.Net.Clients;
-using Kucoin.Net.Clients;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Kucoin.Net.Clients;
 
 namespace TradingApp.Providers
 {

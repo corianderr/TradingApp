@@ -1,4 +1,3 @@
-using Binance.Net.Clients;
 using TradingApp.Providers;
 
 namespace TradingApp
